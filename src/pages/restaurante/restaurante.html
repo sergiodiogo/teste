@@ -1,0 +1,99 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+      <ion-title>restaurante</ion-title>
+   <ion-buttons end>
+   <button ion-button >
+     <ion-icon name="heart"></ion-icon>
+   </button>
+    <button ion-button >
+      <ion-icon name="share"></ion-icon>
+    </button>
+   </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+<img src="assets/imgs/rest.JPG" class="img"/>
+
+<!--<ion-slides>
+    <ion-slide class="img">
+        <img src="assets/imgs/rest.JPG" class="img"/>
+      </ion-slide>
+
+      <ion-slide>
+      <img src="assets/imgs/rest1.JPG" class="img"/>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="assets/imgs/rest2.JPG" class="img"/>
+      </ion-slide>
+
+</ion-slides>-->
+    <div padding class="gordon"> 
+<h1 class="fonth" >Gordon Biersch</h1>
+<h2 class="font">1 mile • 30-60min • $$$$</h2>
+<button ion-button class="bt1" item-end>Casual Dining</button>
+<button ion-button class="bt2" item-end>
+   <ion-icon name="star">
+     3.8
+   </ion-icon>
+  </button>
+    </div>
+
+   <div padding class="top">
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Menu
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      Reviews
+    </ion-segment-button>
+    <ion-segment-button value="nome">
+      Info
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'nome'">
+    
+  </ion-list>
+  <ion-list *ngSwitchCase="'puppies'">
+     
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'kittens'">
+    <ion-item>
+      <ion-thumbnail item-start>
+      <img src="assets/imgs/prato1.jpg">
+    </ion-thumbnail>
+    <h2 class="fonth" color="primary">Pacific Jamed</h2>
+    <p class="font"color="primary">sweet, potatos, spices,gren</p>
+    <button ion-button class="bt3"item-end>$12.50</button>
+    </ion-item>
+  <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/pizza.jpeg">
+      </ion-thumbnail>
+     <h2 class="fonth" color="primary">Mamamia Pizza</h2>
+    <p class="font"color="primary">sweet, potatos, spices,gren</p>
+    <button ion-button class="bt3"item-end>$16.50</button>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>   
+        <img src="assets/imgs/burguer.jpg">
+      </ion-thumbnail>
+     <h2 class="fonth" color="primary">Burguer</h2>
+    <p class="font"color="primary">sweet, potatos, spices,gren</p>
+    <button ion-button class="bt3"item-end>$14.50</button>
+    </ion-item>
+
+    
+  </ion-list>
+</div>
+
+<ion-fab right bottom color="#8B0000">
+    <button ion-fab (click)="Cart()" ><ion-icon name="cart"></ion-icon></button>
+</ion-fab>
+
+</ion-content>

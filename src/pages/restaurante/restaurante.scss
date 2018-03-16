@@ -1,0 +1,55 @@
+page-restaurante {
+
+   
+
+    .top{
+         margin-top: -30px;
+
+    }
+
+       .img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin-top:0;              
+   }
+
+   .font{
+       font-size: 12px;
+       color: #8B0000;
+   }
+    .fonth{
+        font-size: 16px;
+        font-weight: bold;
+        color: #8B0000;
+   }
+
+   .gordon{
+       margin-top: 184px;
+       text-align: center;
+       
+   }
+    .bt1{
+     font-size: 12px;
+    width: 110px;
+     height: 20px;
+     background-color: #FFA500;
+    }
+
+    .bt2{
+     font-size: 9px;
+    width: 40px;
+     height: 20px;
+     background-color: #8B0000;
+    }
+
+    .bt3{
+     font-size: 12px;
+       width: 40px;
+     height: 20px;
+     background-color:#66CD00;
+     margin-right: 80px;
+    }
+}
